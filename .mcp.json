@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "kiprio": {
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/kiprio_mcp.py"],
+      "env": {
+        "KIPRIO_API_KEY": "${KIPRIO_API_KEY}"
+      }
+    }
+  }
+}

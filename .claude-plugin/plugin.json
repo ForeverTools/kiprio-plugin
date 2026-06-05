@@ -1,0 +1,112 @@
+{
+  "name": "kiprio",
+  "version": "0.1.0",
+  "description": "Kiprio developer APIs as Claude Code plugin — Open Graph extraction, UK business-day calculator, email validation, screenshot capture, DNS / SSL inspection, and more. Free tier, no key required.",
+  "author": {
+    "name": "Kiprio",
+    "url": "https://kiprio.com"
+  },
+  "homepage": "https://kiprio.com",
+  "repository": "https://github.com/ForeverTools/kiprio-plugin",
+  "license": "MIT",
+  "keywords": [
+    "api",
+    "og",
+    "open-graph",
+    "business-day",
+    "email-validate",
+    "screenshot",
+    "dns",
+    "ssl",
+    "uk",
+    "utility",
+    "developer-tools"
+  ],
+  "mcp": {
+    "config": ".mcp.json"
+  },
+  "commands": [
+    {
+      "name": "og",
+      "description": "Extract Open Graph and Twitter Card meta tags from any URL.",
+      "endpoint": "https://kiprio.com/v1/og/",
+      "docs": "https://kiprio.com/og-api/"
+    },
+    {
+      "name": "bizday",
+      "description": "UK business-day calculator (England & Wales bank holidays).",
+      "endpoint": "https://kiprio.com/v1/bizday/",
+      "docs": "https://kiprio.com/bizday-api/"
+    },
+    {
+      "name": "email-validate",
+      "description": "Email syntax, MX, disposable-domain, and role-address validation.",
+      "endpoint": "https://kiprio.com/v1/email-validate/",
+      "docs": "https://kiprio.com/email-validate-api/"
+    },
+    {
+      "name": "screenshot",
+      "description": "Full-page website screenshot (PNG / JPEG, configurable viewport).",
+      "endpoint": "https://kiprio.com/v1/screenshot/",
+      "docs": "https://kiprio.com/screenshot-api/"
+    },
+    {
+      "name": "dns",
+      "description": "DNS lookup (A, AAAA, MX, TXT, CNAME) for any hostname.",
+      "endpoint": "https://kiprio.com/v1/dns-lookup/",
+      "docs": "https://kiprio.com/dns-api/"
+    },
+    {
+      "name": "ssl",
+      "description": "SSL certificate inspection: expiry, chain, issuer, ciphers.",
+      "endpoint": "https://kiprio.com/v1/ssl/",
+      "docs": "https://kiprio.com/ssl-api/"
+    },
+    {
+      "name": "redact",
+      "description": "PII redaction: emails, phone numbers, NI numbers, card numbers.",
+      "endpoint": "https://kiprio.com/v1/redact/",
+      "docs": "https://kiprio.com/redact-api/"
+    },
+    {
+      "name": "schema",
+      "description": "Generate JSON-LD schema markup for common types.",
+      "endpoint": "https://kiprio.com/v1/schema/",
+      "docs": "https://kiprio.com/schema-api/"
+    },
+    {
+      "name": "qr",
+      "description": "QR code generation (SVG / PNG, configurable size and error correction).",
+      "endpoint": "https://kiprio.com/v1/qr/",
+      "docs": "https://kiprio.com/qr-api/"
+    },
+    {
+      "name": "unfurl",
+      "description": "Link preview unfurl — title, description, favicon, primary image.",
+      "endpoint": "https://kiprio.com/v1/unfurl/",
+      "docs": "https://kiprio.com/unfurl-api/"
+    }
+  ],
+  "pricing": {
+    "free": {
+      "rate_limit": "varies per API",
+      "auth": "none"
+    },
+    "pro": {
+      "price_monthly_usd": 9,
+      "auth": "api_key"
+    },
+    "business": {
+      "price_monthly_usd": 39,
+      "auth": "api_key"
+    },
+    "enterprise": {
+      "auth": "api_key",
+      "contact": "support@kiprio.com"
+    }
+  },
+  "contact": {
+    "email": "support@kiprio.com",
+    "issues": "https://github.com/ForeverTools/kiprio-plugin/issues"
+  }
+}
