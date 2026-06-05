@@ -1,0 +1,26 @@
+{
+  "name": "kiprio",
+  "owner": {
+    "name": "ForeverTools",
+    "url": "https://kiprio.com"
+  },
+  "metadata": {
+    "description": "Kiprio developer APIs as Claude Code plugins.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "kiprio",
+      "source": "./",
+      "description": "Kiprio developer APIs as a Claude Code plugin — Open Graph extraction, UK business-day calculator, email validation, screenshot capture, DNS / SSL inspection, PII redaction, QR codes, JWT decode, breach check, and more. Free tier, no key required.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Kiprio",
+        "url": "https://kiprio.com"
+      },
+      "homepage": "https://kiprio.com",
+      "license": "MIT",
+      "keywords": ["api", "open-graph", "email-validate", "screenshot", "dns", "ssl", "utility", "developer-tools"]
+    }
+  ]
+}
